@@ -17,4 +17,6 @@ let main argv =
 
     printf "%f" calc
 
+    let res = Console.ReadKey()
+
     0 // return an integer exit code
