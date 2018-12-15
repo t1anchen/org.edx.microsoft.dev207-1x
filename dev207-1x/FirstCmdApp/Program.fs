@@ -2,15 +2,22 @@
 
 open System
 
+let rect w h = w * h
+let cube w h b = (rect w h) * b
+
 [<EntryPoint>]
 let main argv =
-    Console.Write("Please enter how far you traveled: ")
-    let distance = Console.ReadLine()
-    let distance = float distance
-    Console.Write("Please enter how much fuel you used: ")
-    let fuel = Console.ReadLine()
-    let fuel = float fuel
-    let consumption = distance / fuel
-    Console.WriteLine("Your car does a distance of " + (string consumption) + "  per single unit of fuel ")
-    Console.ReadKey()
+    Console.Write("Please enter the width: ")
+    let w = Console.ReadLine()
+    let w = int w
+    Console.Write("Please enter the height: ")
+    let h = Console.ReadLine()
+    let h = int h
+    Console.Write("Please enter the breadth: ")
+    let b = Console.ReadLine()
+    let b = int b
+
+    let cv = cube w h b
+    printfn "%A" cv // Console.WriteLine(cv)
+
     0 // return an integer exit code
