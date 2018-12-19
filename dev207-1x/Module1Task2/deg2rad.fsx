@@ -7,3 +7,7 @@ let testa = deg2rad 180.0
 let testb = rad2deg testa
 
 deg2rad 67.0;;
+
+// Result
+// deg2rad 67.0;;
+//  val it : float = 1.169370599
