@@ -21,5 +21,13 @@ let testRecord = {
     ID = 229229
 }
 
-checkmatch (IsMatchByName testRecord "Home1");;
+let numericalInput = {
+    IP = "10.1.1.1";
+    MAC = "FF:FF:FF:FF:FF:FF";
+    FriendlyName = "ServerFailure";
+    ID = 0
+}
+
+// checkmatch (IsMatchByName testRecord "Home1");;
+checkmatch(IsMatchByName numericalInput "ServerFailure")
 
